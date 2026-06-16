@@ -19,6 +19,7 @@ public class GamingGear {
     private String productName;
     private String serialCode;
     private Double price;
-    private Enum<Type> type;
+    @Enumerated(EnumType.STRING)
+    private Type type;
     private boolean isDelete;
 }

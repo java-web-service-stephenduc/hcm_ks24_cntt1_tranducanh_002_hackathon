@@ -14,6 +14,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GamingGearDTO {
+    private long id;
+
     @NotBlank(message = "ten san pham khong duoc de trong")
     private String productName;
 
@@ -23,6 +25,6 @@ public class GamingGearDTO {
     @Min(value = 1, message = "gia phai lon hom khong")
     private Double price;
 
-    private Enum<Type> type;
+    private Type type;
     private boolean isDelete;
 }

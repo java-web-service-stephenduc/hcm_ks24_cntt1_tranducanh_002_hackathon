@@ -1,20 +1,20 @@
 package com.re.hackathon.service;
 
 import com.re.hackathon.dto.GamingGearDTO;
-import org.springframework.web.servlet.function.EntityResponse;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
 public interface GamingGearService {
-    EntityResponse<List<GamingGearDTO>> findAll();
+    ResponseEntity<List<GamingGearDTO>> findAll(String productName, String serialCode, Integer page, Integer size);
 
-    EntityResponse<GamingGearDTO> InsertGamingGear(GamingGearDTO gamingGearDTO);
+    ResponseEntity<GamingGearDTO> InsertGamingGear(GamingGearDTO gamingGearDTO);
 
-    EntityResponse<GamingGearDTO> UpdateEntierGamingGear(GamingGearDTO gamingGearDTO, Long id);
+    ResponseEntity<GamingGearDTO> UpdateEntierGamingGear(GamingGearDTO gamingGearDTO, Long id);
 
-    EntityResponse<GamingGearDTO> UpdatePriceGamingGear(GamingGearDTO gamingGearDTO, Long id);
+    ResponseEntity<GamingGearDTO> UpdatePriceGamingGear(GamingGearDTO gamingGearDTO, Long id);
 
-    EntityResponse<GamingGearDTO> DeleteSoftGamingGear(GamingGearDTO gamingGearDTO, Long id);
+    ResponseEntity<GamingGearDTO> DeleteSoftGamingGear(GamingGearDTO gamingGearDTO, Long id);
 
-    EntityResponse<GamingGearDTO> DeleteHardGamingGear(GamingGearDTO gamingGearDTO, Long id);
+    ResponseEntity<GamingGearDTO> DeleteHardGamingGear(GamingGearDTO gamingGearDTO, Long id);
 }
