@@ -1,6 +1,8 @@
-package com.re.hackathon.exception;
+package com.re.hackathon.exception.handler;
 
 
+import com.re.hackathon.exception.NotFoundException;
+import com.re.hackathon.exception.ValidateException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

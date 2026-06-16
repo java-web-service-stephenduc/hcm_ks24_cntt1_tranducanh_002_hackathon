@@ -22,6 +22,7 @@ public class GamingGearDTO {
 
     @Min(value = 1, message = "gia phai lon hom khong")
     private Double price;
+
     private Enum<Type> type;
     private boolean isDelete;
 }

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 
-// áp dụng aop để kiểm soát log. hệ thống tự log ra console thông tin về method-name khi có luồng dữ liệu gọi vào chức năng thêm/ cập nhật
+// áp dụng aop để kiểm soát log. hệ thống tự log ra console thông tin về method-name khi có luồng dữ liệu gọi vào chức năng thêm,cập nhật
 public class LoggingAspect {
     @Pointcut("execution(* com.re.hackathon.controller.*.*(..))")
     public void controllerMethods() {}

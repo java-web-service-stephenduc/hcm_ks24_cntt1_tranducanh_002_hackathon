@@ -35,8 +35,8 @@ public class GamingGearController {
 
     // cập nhật 1 phần thông tin của 1 thết bị + validate
     @PutMapping("/update/{id}")
-    public EntityResponse<GamingGearDTO> UpdateLimitGamingGear(@RequestBody GamingGearDTO gamingGearDTO, @PathVariable Long id) {
-        return gamingGearService.UpdateLimitGamingGear(gamingGearDTO,id);
+    public EntityResponse<GamingGearDTO> UpdatePriceGamingGear(@RequestBody GamingGearDTO gamingGearDTO, @PathVariable Long id) {
+        return gamingGearService.UpdatePriceGamingGear(gamingGearDTO,id);
     }
 
     // xóa thiết bị (soft delete & hard delete)

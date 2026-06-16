@@ -45,7 +45,7 @@ public class GamingGearServiceImpl implements GamingGearService {
     }
 
     @Override
-    public EntityResponse<GamingGearDTO> UpdateLimitGamingGear(GamingGearDTO gamingGearDTO, Long id) {
+    public EntityResponse<GamingGearDTO> UpdatePriceGamingGear(GamingGearDTO gamingGearDTO, Long id) {
         return null;
     }
 

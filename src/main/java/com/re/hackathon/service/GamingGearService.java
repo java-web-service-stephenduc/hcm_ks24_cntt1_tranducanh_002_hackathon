@@ -12,7 +12,7 @@ public interface GamingGearService {
 
     EntityResponse<GamingGearDTO> UpdateEntierGamingGear(GamingGearDTO gamingGearDTO, Long id);
 
-    EntityResponse<GamingGearDTO> UpdateLimitGamingGear(GamingGearDTO gamingGearDTO, Long id);
+    EntityResponse<GamingGearDTO> UpdatePriceGamingGear(GamingGearDTO gamingGearDTO, Long id);
 
     EntityResponse<GamingGearDTO> DeleteSoftGamingGear(GamingGearDTO gamingGearDTO, Long id);
 

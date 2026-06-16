@@ -1,6 +1,6 @@
 package com.re.hackathon.entity;
 
 public enum Type {
-    KEYNOARD,
+    KEYBOARD,
     MOUSE_HEADSET;
 }
